@@ -1,0 +1,33 @@
+.taskStatusBar {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 46rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.statusTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.statusTasks .createdText {
+  color: var(--blue);
+}
+
+.statusTasks .doneText {
+  color: var(--purple);
+}
+
+.badgeTasks {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+}

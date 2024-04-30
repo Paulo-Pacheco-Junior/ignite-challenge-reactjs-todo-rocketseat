@@ -1,0 +1,21 @@
+.zeroTasks {
+  padding: 4rem;
+  border-top: 1px solid var(--gray-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46rem;
+}
+
+.zeroTasks img {
+  height: 3.125rem;
+}
+
+.zeroTasksText {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
