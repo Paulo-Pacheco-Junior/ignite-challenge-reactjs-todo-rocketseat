@@ -64,3 +64,37 @@
 .inputCreateTasks button:hover {
   background-color: var(--blue);
 }
+
+@media(max-width: 768px) {
+
+  html {
+    font-size: 7.5px;
+  }
+
+  .formTasks {
+    width: 38rem;
+  }
+
+  .inputCreateTasks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .inputCreateTasks input {
+    width: 38rem;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .inputCreateTasks button[type='submit'] {
+    width: 38rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    gap: 4px;
+  }
+
+  .CreateButtonIcon {
+    height: 16px;
+    width: 16px;
+  }
+}

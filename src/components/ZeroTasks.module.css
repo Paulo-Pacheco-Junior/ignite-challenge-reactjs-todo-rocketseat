@@ -19,3 +19,14 @@
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+@media(max-width: 768px) {
+  .zeroTasks img {
+    height: 4.5rem;
+  }
+
+  .zeroTasksText {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}

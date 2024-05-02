@@ -57,7 +57,7 @@ export function App() {
             <input onChange={handleInputCreateTask} value={task} placeholder='Adicione uma nova tarefa' required />
             <button type='submit'>
               <span>Criar</span>
-              <PlusCircle size={20}/>
+              <PlusCircle size={20} className={styles.CreateButtonIcon}/>
             </button>
           </div>
         </form>

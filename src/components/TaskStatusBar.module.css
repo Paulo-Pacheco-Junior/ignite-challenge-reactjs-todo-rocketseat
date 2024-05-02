@@ -31,3 +31,15 @@
   padding: 0.1rem 0.5rem;
   border-radius: 20px;
 }
+
+@media(max-width: 768px) {
+  .taskStatusBar {
+    width: 36rem;
+    font-size: 1.4rem;
+  }
+
+  .badgeTasks {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.2rem;
+  }
+}
