@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 46rem;
-  border-radius: 8px;
+  border-radius: 8px;  
 }
 
 .taskItem {
@@ -59,7 +59,8 @@
 }
 
 .taskItem span {
-  padding: 0 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
 .taskItem .done {
