@@ -19,18 +19,18 @@ export function App() {
   const [task, setTask] = useState('');
 
   function handleInputCreateTask(event: ChangeEvent<HTMLInputElement>) {
-    setTask(event.target.value)
+    setTask(event.target.value);
   }
 
   function handleSubmitTask(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
+    event.preventDefault();
     if(task.length > 0 && task.trim() !== '') {
       const newTask = {
         id: uuidv4(),
         text: task, 
         checked: false
-      } 
-      setTasks([...tasks, newTask])
+      }
+      setTasks(tasks => [...tasks, newTask]);
       setTask('');
     }
   }
