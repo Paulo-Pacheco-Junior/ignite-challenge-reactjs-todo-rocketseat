@@ -142,8 +142,10 @@
   }
 
   .taskList {
-    max-height: 45rem;
-    overflow-y:unset; 
-    max-height:none;
+    max-height: 60rem;
+  }
+
+  .taskList::-webkit-scrollbar {
+    width: 2px; 
   }
 }
