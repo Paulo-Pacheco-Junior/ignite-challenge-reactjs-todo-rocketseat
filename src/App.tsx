@@ -64,16 +64,16 @@ export function App() {
         <TaskStatusBar tasks={tasks} />
         <div className={styles.tasksContainer}>   
           {tasks.length > 0  
-            ? tasks.map((task) => {
-                return (
+            ? <ul className={styles.taskList}> 
+                {tasks.map((task) => (
                   <TaskList 
                     key={task.id} 
                     task={task}
                     onToggleTask={onToggleTask}
                     onDeleteTask={onDeleteTask}
                   />
-                ) 
-              })           
+                ))}           
+              </ul>
             : <ZeroTasks />   
           }
         </div>

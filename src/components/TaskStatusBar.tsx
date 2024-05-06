@@ -22,7 +22,9 @@ export function TaskStatusBar({tasks}: TaskStatusBarProps) {
       </div>
       <div className={styles.statusTasks}>
         <span className={styles.doneText}>Concluídas</span>
-        <span className={styles.badgeTasks}>{tasksDone.length} de {tasks.length}</span>
+        <span className={styles.badgeTasks}>
+          {tasks.length > 0 ? `${tasksDone.length} de ${tasks.length}` : tasks.length}
+        </span>
       </div>
     </div>
   )

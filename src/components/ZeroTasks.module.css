@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 46rem;
+  max-width: 46rem;
+  margin: auto;
 }
 
 .zeroTasks img {
@@ -21,12 +22,19 @@
 }
 
 @media(max-width: 768px) {
+  .zeroTasks {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .zeroTasks img {
-    height: 4.5rem;
+    margin-top: 2rem;
+    height: 6rem;
   }
 
   .zeroTasksText {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }

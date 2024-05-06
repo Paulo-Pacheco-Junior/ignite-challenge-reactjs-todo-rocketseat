@@ -24,17 +24,15 @@ export function TaskList({task, onToggleTask, onDeleteTask}: TaskListProps) {
   }
 
   return (
-    <ul className={styles.taskList}>
-      <li className={styles.taskItem}>
-        <label className={styles.checkboxLabel}>
-          <input type='checkbox' onChange={()=>handleToggleTask(task.id)} checked={task.checked} />
-          {task.checked && <Check size={12} weight='bold' className={styles.checkboxIcon} />}
-        </label>
-        <span onClick={()=>handleToggleTask(task.id)} className={task.checked ? styles.done : ''}>{task.text}</span>
-        <button onClick={()=>handleDeleteTask(task.id)}>
-          <Trash size={16} />
-        </button>
-      </li>
-    </ul>
+    <li className={styles.taskItem}>
+      <label className={styles.checkboxLabel}>
+        <input type='checkbox' onChange={()=>handleToggleTask(task.id)} checked={task.checked} />
+        {task.checked && <Check size={12} weight='bold' className={styles.checkboxIcon} />}
+      </label>
+      <span onClick={()=>handleToggleTask(task.id)} className={task.checked ? styles.done : ''}>{task.text}</span>
+      <button onClick={()=>handleDeleteTask(task.id)}>
+        <Trash size={16} />
+      </button>
+    </li>
   )
 }
